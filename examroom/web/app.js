@@ -79,7 +79,8 @@ async function start(id,wrongIds) {
   const bank=banks.find(b=>b.id===id)||(result?.bank.id===id?result.bank:null);
   const mode=$('#mode').value, mins=Number($('#duration').value), count=Number($('#question-count').value);
   const pool=wrongIds?bank.questions.filter(q=>wrongIds.includes(q.id)):bank.questions;
-  if(!Number.isInteger(count)||count<1||count>pool.length||!Number.isInteger(mins)||mins<1||mins>600){$('#setup-error').innerHTML='<p class="error">Kiểm tra số câu và thời gian (1–600 phút).</p>';return;}
+  if(!Number.isInteger(count)||count<1||count>pool.length){$('#setup-error').innerHTML=`<p class="error">Số câu muốn làm phải từ 1 đến ${pool.length} câu (bộ đề hiện có ${pool.length} câu hỏi).</p>`;return;}
+  if(!Number.isInteger(mins)||mins<1||mins>600){$('#setup-error').innerHTML='<p class="error">Thời gian làm bài phải từ 1 đến 600 phút.</p>';return;}
   const questions=($('#shuffle').checked?shuffled(pool):pool).slice(0,count);
   const next={id:uid(),bank:structuredClone(bank),ids:questions.map(q=>q.id),answers:{},flags:[],revealed:[],index:0,startedAt:Date.now(),deadline:mode==='exam'?Date.now()+mins*60000:null,settings:{mode,preferImage:$('#prefer-image').checked,durationMinutes:mins}};
   await write('active',next);active=next;closeModal();page='exam';render();window.scrollTo(0,0);
