@@ -1,0 +1,23 @@
+{
+  "name": "examroom-fptu",
+  "version": "1.0.0",
+  "description": "Ứng dụng mô phỏng phòng thi và công cụ tự động cào đề thi FUOverflow cho sinh viên FPTU",
+  "type": "module",
+  "main": "crawler.mjs",
+  "scripts": {
+    "start": "node examroom/server.mjs",
+    "crawl": "node crawler.mjs"
+  },
+  "keywords": [
+    "fptu",
+    "fuoverflow",
+    "examroom",
+    "mock-exam",
+    "practice"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "tesseract.js": "^7.0.0"
+  }
+}

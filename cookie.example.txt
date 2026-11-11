@@ -1,0 +1,3 @@
+# Dán Cookie FUOverflow của bạn vào đây (thay thế dòng bên dưới)
+# Ví dụ:
+# xf_user=...; xf_session=...; cf_clearance=...

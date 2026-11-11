@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "title": "Bộ đề mẫu · Kỹ năng học tập",
+  "subject": "Tự học",
+  "durationMinutes": 15,
+  "description": "Mẫu để bạn thay nội dung bằng bộ đề của mình.",
+  "questions": [
+    {
+      "id": "1",
+      "text": "Một nhóm làm việc hiệu quả nên làm gì?",
+      "options": {"A": "Thống nhất mục tiêu và trách nhiệm", "B": "Để một người làm mọi việc", "C": "Né tránh mọi phản hồi", "D": "Không cần thời hạn"},
+      "answer": "A",
+      "explanation": "Mục tiêu chung và trách nhiệm rõ ràng giúp nhóm phối hợp hiệu quả."
+    },
+    {
+      "id": "2",
+      "text": "Khi sử dụng ý tưởng từ nguồn khác, bạn cần làm gì?",
+      "options": {"A": "Chỉ thay vài từ", "B": "Ghi nhận nguồn phù hợp", "C": "Nhận đó là ý tưởng của mình"},
+      "answer": "B",
+      "explanation": "Diễn đạt lại vẫn cần ghi nguồn cho ý tưởng được sử dụng."
+    }
+  ]
+}

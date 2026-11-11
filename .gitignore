@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Private user credentials
+cookie.txt
+
+# Scraper output & cache
+output/
+SWT301/
+WDU203c/
+SSG104/
+scripts_legacy/
+eng.traineddata
+*_threads.json
+threads_list.json
+
+# Logs & temp
+*.log
+.DS_Store
+Thumbs.db

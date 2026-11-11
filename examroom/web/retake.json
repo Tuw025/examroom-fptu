@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "sourceId": "ssg105-su26-re-578312",
+  "contentRevision": 1,
+  "title": "SSG105 · RETAKE",
+  "subject": "SSG105",
+  "description": "Đề SU26 · RE 578312 · 30 câu nguyên văn từ ảnh gốc. Đáp án do bạn cung cấp, kèm giải thích ngắn.",
+  "durationMinutes": 30,
+  "questions": [
+    {
+      "id": "1",
+      "text": "What is NOT an example of artifacts?",
+      "options": {
+        "A": "Tattoos",
+        "B": "Eyeglasses",
+        "C": "Brand logos",
+        "D": "Cars",
+        "E": "Eye colour"
+      },
+      "answer": "E",
+      "image": "/assets/retake/769385925_122116351959312178_4067394751784854858_n.jpg",
+      "explanation": "Artifacts là vật thể hoặc dấu hiệu được con người tạo ra, lựa chọn để biểu đạt bản thân. Màu mắt tự nhiên không thuộc nhóm này.",
+      "note": ""
+    },
+    {
+      "id": "2",
+      "text": "A team member drafts a summary of an industry article but forgets to credit the original source, assuming that changing the words is enough. Why is this structurally problematic in academic writing?",
+      "options": {
+        "A": "Even when paraphrasing or summarizing, failing to credit the source still constitutes plagiarism because the core ideas are not original.",
+        "B": "The team member failed to maintain the roughly similar length of the original article, which is required for a summary.",
+        "C": "Summaries must use the exact wording of the original text; only paraphrasing allows for changing the vocabulary.",
+        "D": "The document lacks a clear problem-solution organizational pattern, which makes the uncredited information confusing."
+      },
+      "answer": "A",
+      "image": "/assets/retake/768391212_122116351995312178_7726993357408434316_n.jpg",
+      "explanation": "Đổi lời văn hoặc tóm tắt không làm ý tưởng gốc trở thành ý tưởng của mình. Vẫn phải ghi nhận nguồn.",
+      "note": ""
+    },
+    {
+      "id": "3",
+      "text": "You are writing a report detailing the step-by-step process of launching a new product over the last six months. Which organizational pattern should you apply?",
+      "options": {
+        "A": "Compare-contrast",
+        "B": "Cause-effect",
+        "C": "Chronological (time order)",
+        "D": "Problem-solution"
+      },
+      "answer": "C",
+      "image": "/assets/retake/762916808_122116352001312178_4684847364468956288_n.jpg",
+      "explanation": "Báo cáo mô tả các bước diễn ra trong sáu tháng phù hợp với cách tổ chức theo trình tự thời gian.",
+      "note": ""
+    },
+    {
+      "id": "4",
+      "text": "When an interviewer asks a behavioral question such as “Describe a time you solved a problem in a team”, what is the most effective approach for the candidate?",
+      "options": {
+        "A": "Give a broad, generalized statement about how teamwork is always vital in modern environments.",
+        "B": "Use a structured method to share a specific, concise story highlighting real actions and measurable results.",
+        "C": "Explain that no interpersonal or operational problems have ever occurred in past group projects.",
+        "D": "Detail a complex situation where a teammate failed completely, focusing entirely on blaming that person."
+      },
+      "answer": "B",
+      "image": "/assets/retake/768408767_122116352133312178_1891165519860332567_n.jpg",
+      "explanation": "Câu hỏi hành vi cần một ví dụ cụ thể về việc đã làm và kết quả. Có thể dùng cấu trúc STAR: tình huống, nhiệm vụ, hành động và kết quả.",
+      "note": ""
+    },
+    {
+      "id": "5",
+      "text": "“Nonverbal cues cannot be isolated from the broader context of communication, nor can they be retracted once expressed.”\n\nWhich characteristic of nonverbal communication is expressed in the above statement?",
+      "options": {
+        "A": "Irreversible",
+        "B": "Immediate",
+        "C": "Redundant",
+        "D": "Easy to be misunderstood",
+        "E": "Emotional"
+      },
+      "answer": "A",
+      "image": "/assets/retake/768992377_122116352193312178_8627967595877968952_n.jpg",
+      "explanation": "Irreversible nghĩa là không thể thu hồi hoàn toàn tín hiệu đã biểu đạt và tác động mà người khác đã cảm nhận.",
+      "note": ""
+    },
+    {
+      "id": "6",
+      "text": "What does \"intimacy\" mean in the Trust Equation?",
+      "options": {
+        "A": "What you say and know.",
+        "B": "Whether you follow through consistently.",
+        "C": "Whether you focus on yourself.",
+        "D": "How safe others feel sharing with you."
+      },
+      "answer": "D",
+      "image": "/assets/retake/764818160_122116352229312178_2009226423679507034_n.jpg",
+      "explanation": "Intimacy trong phương trình niềm tin là mức an toàn mà người khác cảm thấy khi chia sẻ điều riêng tư hoặc dễ bị tổn thương với bạn.",
+      "note": ""
+    },
+    {
+      "id": "7",
+      "text": "In which context is writing emails appropriate?",
+      "options": {
+        "A": "When the topic is emotionally charged or involves conflict",
+        "B": "When the matter is highly urgent",
+        "C": "When a paper trail is needed",
+        "D": "When handling highly confidential information"
+      },
+      "answer": "C",
+      "image": "/assets/retake/769051876_122116352385312178_3792624220623157252_n.jpg",
+      "explanation": "Email tạo bản ghi có thể tra cứu về nội dung trao đổi, quyết định và trách nhiệm, phù hợp khi cần paper trail.",
+      "note": ""
+    },
+    {
+      "id": "8",
+      "text": "What is NOT true about team meetings?",
+      "options": {
+        "A": "A part of how groups get work done",
+        "B": "Members can have different feelings about the important of meetings.",
+        "C": "A management tool",
+        "D": "Can be replaced by emails",
+        "E": "Help increase team cohesion"
+      },
+      "answer": "D",
+      "image": "/assets/retake/768592506_122116352427312178_7645518539813149886_n.jpg",
+      "explanation": "Không thể khẳng định mọi cuộc họp đều thay thế được bằng email; họp còn phục vụ thảo luận, giải quyết bất đồng và xây dựng gắn kết.",
+      "note": ""
+    },
+    {
+      "id": "9",
+      "text": "How should a team handle mistakes to maintain psychological safety?",
+      "options": {
+        "A": "Blame the person who caused the mistake.",
+        "B": "Exclude the member from future decisions",
+        "C": "Use a forward-looking approach and ask how to improve next time.",
+        "D": "Stop sharing knowledge to avoid more mistakes"
+      },
+      "answer": "C",
+      "image": "/assets/retake/763263140_122116352421312178_1186881300442554046_n.jpg",
+      "explanation": "Tập trung học từ sai sót và cải thiện lần sau giúp thành viên tiếp tục chia sẻ, thay vì sợ bị đổ lỗi hoặc loại trừ.",
+      "note": ""
+    },
+    {
+      "id": "10",
+      "text": "How should a persuasive speaker utilize Maslow’s hierarchy of needs when tailoring their message?",
+      "options": {
+        "A": "Always focus on self-actualization, as it is the most powerful motivator for all audiences.",
+        "B": "Address the highest-level needs first to capture immediate interest.",
+        "C": "Identify and appeal to the needs relevant to the audience's current situation before attempting to motivate higher-level desires.",
+        "D": "Ignore Maslow’s hierarchy, as it is outdated in modern business communication."
+      },
+      "answer": "C",
+      "image": "/assets/retake/771855502_122116352685312178_2661558968098390813_n.jpg",
+      "explanation": "Thông điệp cần phù hợp với nhu cầu hiện tại của người nghe; không mặc định mọi đối tượng đều quan tâm đến cùng một cấp nhu cầu.",
+      "note": ""
+    },
+    {
+      "id": "11",
+      "text": "If a business writer carefully structures their report to present data and financial statistics in a highly logical and organized manner, which rhetorical element are they primarily utilizing?",
+      "options": {
+        "A": "Pathos, because financial data usually triggers a strong emotional response from investors.",
+        "B": "Ethos, because utilizing structured formatting automatically proves the writer's high moral character.",
+        "C": "Logos, because the writer is appealing to the audience's sense of reason and logical deduction.",
+        "D": "Eros, because the writer wants the audience to feel passionate about the corporate budget."
+      },
+      "answer": "C",
+      "image": "/assets/retake/770758988_122116352697312178_6795766264261762210_n.jpg",
+      "explanation": "Logos thuyết phục bằng lý lẽ, dữ liệu và suy luận logic. Ethos liên quan đến uy tín; pathos liên quan đến cảm xúc.",
+      "note": ""
+    },
+    {
+      "id": "12",
+      "text": "Why is it important to provide constructive feedback?",
+      "options": {
+        "A": "To focus only on the positive factors.",
+        "B": "To reinforce negative behavior.",
+        "C": "To manipulate others’ emotions.",
+        "D": "To examine what is working and areas for improvement."
+      },
+      "answer": "D",
+      "image": "/assets/retake/765898172_122116352727312178_5920848652146612398_n.jpg",
+      "explanation": "Phản hồi mang tính xây dựng giúp xác định điểm đang làm tốt và điểm cần cải thiện để nâng cao kết quả.",
+      "note": ""
+    },
+    {
+      "id": "13",
+      "text": "“Four university seniors are assigned a semester-long capstone project worth 50% of their final grade. Their goal is to design a sustainable rooftop garden proposal for the campus library. One member, overwhelmed by her course load, makes a major calculation error in the structural load report. She uploads it to the shared drive without double-checking.”\n\nIn the given case, what is the most constructive feedback from the team leader?",
+      "options": {
+        "A": "\"Your math is completely wrong on page 3 and you are going to ruin our project grade. How could you be this careless right before the deadline?\"",
+        "B": "\"This layout is a mess because you didn't check your numbers. Now the whole team has to stay up all night to fix them\"",
+        "C": "\"I know you've been overwhelmed by your heavy course load, so don't sweat the math error on page 3; let's get it fixed tonight, and next time we'll make sure someone double-checks the draft with you.\"",
+        "D": "\"If you couldn't handle the engineering section with your heavy course load, you should have just told us instead of turning in flawed work.\""
+      },
+      "answer": "C",
+      "image": "/assets/retake/765769971_122116352955312178_2342196025253358341_n.jpg",
+      "explanation": "C ghi nhận hoàn cảnh của thành viên, nêu lỗi cụ thể và hướng tới sửa lỗi cùng biện pháp kiểm tra chéo cho lần sau.",
+      "note": ""
+    },
+    {
+      "id": "14",
+      "text": "What is NOT suitable when preparing to write a social project proposal?",
+      "options": {
+        "A": "Prepare a transparent spreadsheet breaking down every single cost",
+        "B": "Define project goals using the SMART framework",
+        "C": "Create a project timeline or workflow that assumes perfect conditions",
+        "D": "Gather concrete data, surveys or interviews directly from the target community",
+        "E": "Outline exactly how success will measured"
+      },
+      "answer": "C",
+      "image": "/assets/retake/767388522_122116352949312178_8768622122489898105_n.jpg",
+      "explanation": "Kế hoạch chỉ giả định điều kiện hoàn hảo thiếu dự phòng cho rủi ro, chậm tiến độ hoặc thay đổi nguồn lực.",
+      "note": ""
+    },
+    {
+      "id": "15",
+      "text": "If a cover letter reads like a generic template, repeats the résumé word-for-word, and uses an overly informal greeting, what are the most critical steps to rewrite it?",
+      "options": {
+        "A": "Use a professional greeting, tailor the points to the specific company, and tell a deeper narrative.",
+        "B": "Change the greeting to a more casual phrase, and copy the remaining text exactly as before.",
+        "C": "Keep the generic text but insert multiple technical graphics to distract from the repetitive prose.",
+        "D": "Remove the header details entirely and submit only the middle paragraph to save space on the page."
+      },
+      "answer": "A",
+      "image": "/assets/retake/765694273_122116353027312178_5431250355909817308_n.jpg",
+      "explanation": "Cover letter cần cách chào chuyên nghiệp, phù hợp từng công ty và bổ sung câu chuyện về năng lực, thay vì lặp nguyên CV.",
+      "note": ""
+    },
+    {
+      "id": "16",
+      "text": "Which case does not require a meeting agenda?",
+      "options": {
+        "A": "Daily check-in with team mates",
+        "B": "Project mid-term review",
+        "C": "Strategic discussion",
+        "D": "Project outcome presentation",
+        "E": "Client meeting"
+      },
+      "answer": "A",
+      "image": "/assets/retake/768398733_122116353231312178_134163127967653043_n.jpg",
+      "explanation": "Một buổi check-in hằng ngày ngắn có thể dùng cấu trúc quen thuộc mà không cần chương trình họp riêng, chi tiết như các cuộc họp chính thức.",
+      "note": ""
+    },
+    {
+      "id": "17",
+      "text": "Why is paying close attention to the specific subjects or tasks you genuinely look forward to considered a powerful strategy in career exploration?",
+      "options": {
+        "A": "Enjoyment serves as a highly reliable natural clue toward identifying true personal strengths and interests.",
+        "B": "These subjects always guarantee the highest possible grades with the absolute lowest effort.",
+        "C": "Instructors in those specific areas are legally obligated to act as official career mentors.",
+        "D": "Those subjects are guaranteed by federal databases to offer the most practical open job vacancies."
+      },
+      "answer": "A",
+      "image": "/assets/retake/772510826_122116353285312178_3519482236921017911_n.jpg",
+      "explanation": "Những việc mình hào hứng thực hiện cung cấp manh mối về sở thích và thế mạnh để tiếp tục khám phá nghề nghiệp.",
+      "note": ""
+    },
+    {
+      "id": "18",
+      "text": "What is NOT a characteristic of constructive feedback?",
+      "options": {
+        "A": "Non-judgmental language",
+        "B": "Ambiguity",
+        "C": "Respecting boundaries",
+        "D": "Solution-oriented"
+      },
+      "answer": "B",
+      "image": "/assets/retake/765818144_122116353363312178_2192237752442527245_n.jpg",
+      "explanation": "Phản hồi xây dựng cần cụ thể và dễ hiểu. Sự mơ hồ khiến người nhận không biết cần thay đổi điều gì.",
+      "note": ""
+    },
+    {
+      "id": "19",
+      "text": "Which way of building leadership skills is illustrated in the following statement:\n\n“Treat every team project as a chance to experiment with better leadership behaviours. Each opportunity helps you practise planning, delegating, and following up.”",
+      "options": {
+        "A": "Learning by leading small tasks",
+        "B": "Developing self-awareness",
+        "C": "Building emotional intelligence",
+        "D": "Relationship-building",
+        "E": "Practice constructive communication"
+      },
+      "answer": "A",
+      "image": "/assets/retake/762944459_122116353555312178_7650061312670692336_n.jpg",
+      "explanation": "Rèn luyện qua từng nhiệm vụ lãnh đạo thực tế giúp phát triển khả năng lập kế hoạch, phân công và theo dõi công việc.",
+      "note": ""
+    },
+    {
+      "id": "20",
+      "text": "A project manager needs to submit a weekly status update. By utilizing a pre-designed template to complete the task accurately within a tight deadline, the manager is primarily demonstrating which characteristic of good writing?",
+      "options": {
+        "A": "Efficiency",
+        "B": "Pathos",
+        "C": "Creativity",
+        "D": "Empathy"
+      },
+      "answer": "A",
+      "image": "/assets/retake/765777142_122116353627312178_7852651523671102718_n.jpg",
+      "explanation": "Dùng mẫu phù hợp giúp hoàn thành văn bản chính xác trong thời gian ngắn, thể hiện tính hiệu quả về thời gian và công sức.",
+      "note": ""
+    },
+    {
+      "id": "21",
+      "text": "What is best illustrated in the following example?\n\n“Hung is leading a major project launch, and his key software developer suddenly resigns two weeks before the deadline. He takes a breath and speaks to himself. “Okay, this is a high-stakes stress test for our team. How can we reallocate our remaining resources to launch the project on time, and what can this teach us about documenting our processes better in the future?””",
+      "options": {
+        "A": "Identifying problems as challenges",
+        "B": "Expressing feelings in constructive ways",
+        "C": "Practicing empathy",
+        "D": "Focussing on problem-solving",
+        "E": "Idea brainstorming"
+      },
+      "answer": "A",
+      "image": "/assets/retake/768391199_122116353645312178_8332251468369377296_n.jpg",
+      "explanation": "Hung nhìn khó khăn như một thử thách và cơ hội học hỏi, thay vì chỉ phản ứng tiêu cực với sự cố.",
+      "note": ""
+    },
+    {
+      "id": "22",
+      "text": "What is likely to happen when we jump straight into brainstorming solutions without a clear problem statement?",
+      "options": {
+        "A": "Data and logic win the debate.",
+        "B": "Creative energy is not channelled toward a single, unified target.",
+        "C": "We have higher chance of solving the exact issue holding the team back.",
+        "D": "The scope of the project is established."
+      },
+      "answer": "B",
+      "image": "/assets/retake/762944462_122116353825312178_8561302571547230571_n.jpg",
+      "explanation": "Chưa thống nhất vấn đề sẽ khiến các ý tưởng đi theo những mục tiêu khác nhau, làm phân tán nỗ lực sáng tạo.",
+      "note": ""
+    },
+    {
+      "id": "23",
+      "text": "“A senior developer is preparing a technical documentation brief for their immediate software engineering team detailing a new database migration plan. Because all the readers are expert-level, her preparation is straightforward. She can skip explanations of basic concepts and use heavy, technical jargon from the very first sentence.”\n\nWhich aspect of the audience is considered in the given case?",
+      "options": {
+        "A": "Audience size",
+        "B": "Audience composition",
+        "C": "Audience preference",
+        "D": "Audience mood",
+        "E": "Audience intelligence"
+      },
+      "answer": "B",
+      "image": "/assets/retake/765796945_122116353969312178_8565462236956741244_n.jpg",
+      "explanation": "Audience composition bao gồm nền tảng chuyên môn và kinh nghiệm của người đọc; ở đây họ đều là kỹ sư có trình độ chuyên gia.",
+      "note": ""
+    },
+    {
+      "id": "24",
+      "text": "If a manager over-controls the team and prevents their autonomy, which factor is eroding team performance?",
+      "options": {
+        "A": "Poor delegation by managers.",
+        "B": "Unwillingness to cooperate.",
+        "C": "Lack of managerial support.",
+        "D": "Groupthink."
+      },
+      "answer": "A",
+      "image": "/assets/retake/769324448_122116353975312178_7208094974564331876_n.jpg",
+      "explanation": "Kiểm soát quá mức làm thành viên thiếu quyền tự chủ, thể hiện việc giao quyền và phân công chưa hiệu quả.",
+      "note": ""
+    },
+    {
+      "id": "25",
+      "text": "What does a Case Study report do?",
+      "options": {
+        "A": "Assess the need for a service or product",
+        "B": "Analyze a specific example and present the core lessons learned",
+        "C": "Analyze problems and predict whether current solutions",
+        "D": "Describe one-time events, such as trips, conferences, seminars",
+        "E": "Monitor and control production, sales, shipping, service, or related business process"
+      },
+      "answer": "B",
+      "image": "/assets/retake/767101592_122116354131312178_5295401436552930899_n.jpg",
+      "explanation": "Case study phân tích một trường hợp cụ thể để rút ra bài học từ tình huống đó.",
+      "note": ""
+    },
+    {
+      "id": "26",
+      "text": "What is a primary function of relationship-building roles within a team?",
+      "options": {
+        "A": "To enforce team decisions and ask for information.",
+        "B": "To evaluate alternatives and choose the best options",
+        "C": "To improve team cohesion by supporting motivation, empathy, and conflict handling.",
+        "D": "To perform specific technical tasks required by the assignment"
+      },
+      "answer": "C",
+      "image": "/assets/retake/768577164_122116354209312178_63073643788755568_n.jpg",
+      "explanation": "Vai trò xây dựng quan hệ hỗ trợ tinh thần, sự thấu hiểu và xử lý xung đột để tăng gắn kết nhóm.",
+      "note": ""
+    },
+    {
+      "id": "27",
+      "text": "Which of the following best illustrates a persuasive goal defined by a clear measurable gain?",
+      "options": {
+        "A": "Convincing the executive board that the company's current digital marketing strategy is outdated and inefficient.",
+        "B": "Inspiring employees to appreciate the diverse cultural backgrounds of their global teammates during project collaboration.",
+        "C": "Securing commitment from at least 40% of presentation attendees to sign up for the new corporate wellness beta platform before the end of the day.",
+        "D": "Explaining the step-by-step technical specifications of a new cloud-based customer relationship management system."
+      },
+      "answer": "C",
+      "image": "/assets/retake/764925212_122116354239312178_846084399000296822_n.jpg",
+      "explanation": "C nêu hành động cần đạt, tỷ lệ đo lường được (ít nhất 40%) và thời hạn (trước cuối ngày).",
+      "note": ""
+    },
+    {
+      "id": "28",
+      "text": "What is the main purpose of the marketing plan in a social project proposal?",
+      "options": {
+        "A": "To define the target audience and outline exactly how the project will reach them",
+        "B": "To take market share away from competitors",
+        "C": "To promote the personal brand of the project leaders",
+        "D": "To make the project look good"
+      },
+      "answer": "A",
+      "image": "/assets/retake/765694612_122116354371312178_4637522236996780052_n.jpg",
+      "explanation": "Kế hoạch marketing xác định đối tượng mục tiêu và cách tiếp cận họ để triển khai dự án xã hội hiệu quả.",
+      "note": ""
+    },
+    {
+      "id": "29",
+      "text": "Which can low emotional intelligence in university teams lead to?",
+      "options": {
+        "A": "Group withdrawal",
+        "B": "High-quality work",
+        "C": "Class misses",
+        "D": "Group intelligence",
+        "E": "Deadlines"
+      },
+      "answer": "A",
+      "image": "/assets/retake/764832952_122116354461312178_567354635577053592_n.jpg",
+      "explanation": "Khó nhận biết, điều chỉnh cảm xúc và thấu hiểu người khác có thể làm thành viên xa cách hoặc rút khỏi tương tác nhóm.",
+      "note": ""
+    },
+    {
+      "id": "30",
+      "text": "What are the core values of an effective business writing style?",
+      "options": {
+        "A": "Complexity, detail, and emotional language",
+        "B": "Ambiguity, politeness, and formal vocabulary",
+        "C": "Clarity, brevity, and professionalism",
+        "D": "Passivity, creativity, and subjective tone"
+      },
+      "answer": "C",
+      "image": "/assets/retake/768258232_122116354587312178_5588980201670513507_n.jpg",
+      "explanation": "Văn phong kinh doanh hiệu quả ưu tiên sự rõ ràng, ngắn gọn và chuyên nghiệp.",
+      "note": ""
+    }
+  ]
+}
