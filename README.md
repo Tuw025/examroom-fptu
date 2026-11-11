@@ -25,7 +25,7 @@ Bạn có **2 lựa chọn** để mở ứng dụng thi thử:
 > Thích hợp để học ngay trên điện thoại, iPad, máy tính mà không cần tải code hay cài đặt Node.js.
 
 1. Truy cập vào đường link GitHub Pages của dự án:
-   👉 **`https://<ten-tai-khoan-github>.github.io/<ten-repo>/examroom/web/`**
+   👉 **`https://tuw025.github.io/examroom-fptu/examroom/web/`**
 2. Tại giao diện chính, bấm nút **"Tải lên bộ đề"**.
 3. Chọn 1 trong các bộ đề mẫu có sẵn trong thư mục [`sample_banks/`](./sample_banks/):
    - `sample_banks/SWT301_FA25_RE/examroom_bank.json` (Môn Kiểm thử phần mềm)
@@ -39,8 +39,8 @@ Bạn có **2 lựa chọn** để mở ứng dụng thi thử:
 
 1. Tải hoặc Clone repository này về máy:
    ```bash
-   git clone https://github.com/<ten-tai-khoan>/<ten-repo>.git
-   cd <ten-repo>
+   git clone https://github.com/Tuw025/examroom-fptu.git
+   cd examroom-fptu
    ```
 2. Nhấp đúp vào file **`start.cmd`** trong thư mục `examroom/` (hoặc mở terminal chạy `node examroom/server.mjs`).
 3. Mở trình duyệt tại địa chỉ: **`http://localhost:8765`**.
@@ -139,3 +139,4 @@ Vì vậy, phần giải thích được thiết kế dưới dạng **Tùy ch�
 - **Mục đích giáo dục**: Dự án được xây dựng phi lợi nhuận với mục đích hỗ trợ sinh viên FPTU nâng cao tinh thần tự học và rèn luyện kỹ năng phòng thi.
 
 Chúc các bạn ôn tập thật tốt và đạt điểm cao trong kỳ thi FE! 🚀
+
