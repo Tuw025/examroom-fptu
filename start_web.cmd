@@ -1,29 +1,28 @@
 @echo off
-chcp 65001 > nul
-title Examroom FPTU - Phòng Luyện Thi
+title Examroom FPTU - Phong Luyen Thi Local
 cd /d "%~dp0"
 
-echo ======================================================
-echo    EXAMROOM FPTU - PHÒNG LUYỆN THI TRẮC NGHIỆM LOCAL
-echo ======================================================
+echo ==============================================================
+echo        EXAMROOM FPTU - PHONG LUYEN THI TRAC NGHIEM LOCAL
+echo ==============================================================
 echo.
 
 where node >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [LỖI] Máy tính của bạn CHƯA CÀI ĐẶT Node.js!
+    echo [THONG BAO] May tinh cua ban CHUA CAI DAT Node.js!
     echo.
-    echo Để chạy được ứng dụng luyện thi trên máy cá nhân:
-    echo 1. Hãy tải và cài đặt Node.js miễn phí tại: https://nodejs.org/ (chọn bản LTS).
-    echo 2. Cài đặt xong, hãy nhấp đúp mở lại file start_web.cmd này.
+    echo De chay duoc ung dung local:
+    echo 1. Hay tai va cai dat Node.js tai: https://nodejs.org/ (Chon ban LTS)
+    echo 2. Cai dat xong, hay mo lai file start_web.cmd nay.
     echo.
-    echo Hoặc bạn có thể dùng trực tiếp bản Web Online không cần cài đặt tại:
+    echo Hoac ban co the dung truc tiep ban Web Online khong can cai dat tai:
     echo https://tuw025.github.io/examroom-fptu/
     echo.
     pause
     exit /b
 )
 
-echo Đang khởi động Examroom Local tại http://127.0.0.1:8765...
+echo Dang khoi dong Examroom Local tai http://127.0.0.1:8765...
 start "" http://127.0.0.1:8765
 
 cd /d "%~dp0examroom"
