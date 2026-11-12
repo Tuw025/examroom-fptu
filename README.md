@@ -24,8 +24,8 @@ Bạn có **2 lựa chọn** để mở ứng dụng thi thử:
 ### Lựa chọn 1: Chạy trực tiếp Online (Không cần cài đặt gì)
 > Thích hợp để học ngay trên điện thoại, iPad, máy tính mà không cần tải code hay cài đặt Node.js.
 
-1. Truy cập vào đường link GitHub Pages của dự án:
-   👉 **`https://tuw025.github.io/examroom-fptu/examroom/web/`**
+1. Truy cập vào đường link web trực tiếp:
+   👉 **`https://tuw025.github.io/examroom-fptu/`**
 2. Tại giao diện chính, bấm nút **"Tải lên bộ đề"**.
 3. Chọn 1 trong các bộ đề mẫu có sẵn trong thư mục [`sample_banks/`](./sample_banks/):
    - `sample_banks/SWT301_FA25_RE/examroom_bank.json` (Môn Kiểm thử phần mềm)

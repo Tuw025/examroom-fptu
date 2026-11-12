@@ -21,4 +21,4 @@ const server=http.createServer(async(req,res)=>{
   catch{res.writeHead(404);res.end('Not found');}
 });
 server.on('error',err=>{console.error(err.code==='EADDRINUSE'?`Port ${port} is busy. Close the existing Examroom server or set EXAMROOM_PORT.`:err.message);process.exitCode=1;});
-server.listen(port,'127.0.0.1',()=>console.log(`Examroom: http://127.0.0.1:${port}`));
+server.listen(port, '0.0.0.0', () => console.log(`Examroom: http://127.0.0.1:${port} (hoặc http://localhost:${port})`));
