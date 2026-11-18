@@ -63,11 +63,29 @@ async function fetchWithRetry(url, headers, retries = 3) {
 
 function extractProbableAnswer(text) {
   const clean = text.trim();
-  const startMatch = clean.match(/^([A-F]+)(?:\s*[\.\:\-\)\,\(]|$)/i);
-  if (startMatch) return startMatch[1][0].toUpperCase();
+
+  // Nhận diện nhiều đáp án dạng: "A, D", "A, B, C", "A và D", "A & D"
+  const multiPattern = clean.match(/(?:đáp\s*án|chọn|câu)\s*[:\-\s]*([A-F](?:\s*[\,\+\&vàva\s]+\s*[A-F])+)/i) ||
+                       clean.match(/^([A-F](?:\s*[\,\+\&vàva\s]+\s*[A-F])+)(?:\s*[\.\:\-\)\(]|$)/i);
+  if (multiPattern) {
+    const rawAnswers = multiPattern[1].toUpperCase().match(/[A-F]/g);
+    if (rawAnswers && rawAnswers.length > 0) {
+      return [...new Set(rawAnswers)];
+    }
+  }
+
+  // Nhận diện nhiều đáp án viết liền đầu dòng: ví dụ "AD" hoặc "BC"
+  const twoLetters = clean.match(/^([A-F]{2,4})(?:\s*[\.\:\-\)\(]|$)/i);
+  if (twoLetters) {
+    return [...new Set(twoLetters[1].toUpperCase().split(''))];
+  }
+
+  // Nhận diện 1 đáp án đơn đầu dòng hoặc sau từ khóa
+  const startMatch = clean.match(/^([A-F])(?:\s*[\.\:\-\)\,\(]|$)/i);
+  if (startMatch) return [startMatch[1].toUpperCase()];
 
   const patternMatch = clean.match(/(?:đáp\s*án|chọn|câu)\s*[:\-\s]*([A-F])/i);
-  if (patternMatch) return patternMatch[1].toUpperCase();
+  if (patternMatch) return [patternMatch[1].toUpperCase()];
 
   return null;
 }
@@ -81,7 +99,11 @@ function parseOcrText(rawText) {
     .replace(/(\n|^)\s*([A-Za-z])[a-z]?\.\s*/gi, (m, p1, p2) => p1 + p2.toUpperCase() + '. ')
     .replace(/(\n|^)\s*©\.\s*/g, '$1B. ')
     .replace(/(\n|^)\s*8\.\s*/g, '$1B. ')
-    .replace(/(\n|^)\s*8\s+(?=[A-Z0-9])/g, '$1B. ');
+    .replace(/(\n|^)\s*8\s+(?=[A-Z0-9])/g, '$1B. ')
+    .replace(/(\n|^)\s*[\!\|1li]{1,2}[vV][\.\)]\s*/gi, '$1iv) ')
+    .replace(/(\n|^)\s*[\!\|1li]{3}[\.\)]\s*/gi, '$1iii) ')
+    .replace(/(\n|^)\s*[\!\|1li]{2}[\.\)]\s*/gi, '$1ii) ')
+    .replace(/(\n|^)\s*[\!\|1l][\.\)]\s*/gi, '$1i) ');
 
   const rawLines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
   
@@ -283,7 +305,7 @@ async function scrapeThreadAndBuildBank(thread, subject, headers, worker) {
     }
 
     // Parse comments for answers
-    let probableAnswer = 'A';
+    let probableAnswers = ['A'];
     const mediaMatch = itemHtml.match(/data-lb-sidebar-href="(\/media\/[^"?]+)/i) ||
                        itemHtml.match(/href="(\/media\/[^">]+)"/i);
     if (mediaMatch) {
@@ -298,8 +320,8 @@ async function scrapeThreadAndBuildBank(thread, subject, headers, worker) {
           if (body) {
             const cText = body[1].replace(/<[^>]+>/g, '').trim();
             const ans = extractProbableAnswer(cText);
-            if (ans) {
-              probableAnswer = ans;
+            if (ans && ans.length > 0) {
+              probableAnswers = ans;
               break;
             }
           }
@@ -321,12 +343,15 @@ async function scrapeThreadAndBuildBank(thread, subject, headers, worker) {
     }
 
     const optKeys = Object.keys(parsed.options);
-    if (!optKeys.includes(probableAnswer)) {
-      probableAnswer = optKeys[0] || 'A';
-    }
+    const validAnswers = probableAnswers.filter(a => optKeys.includes(a));
+    const finalAnswers = validAnswers.length > 0 ? validAnswers.sort() : [optKeys[0] || 'A'];
+    const isMultiPrompt = /(?:choose|select)\s*([2-4]|two|three|four)\s*answers?/i.test(parsed.qText) ||
+                          /which\s*(two|three|four|\d+)\s*(?:of\s*the\s*following)?/i.test(parsed.qText);
+    const selectionMode = (isMultiPrompt || finalAnswers.length > 1) ? 'multiple' : 'single';
+    const answerStr = finalAnswers.join(',');
 
     // Standard explanation template
-    const explanation = `Đáp án tham khảo: ${probableAnswer}.\n(Điền ghi chú hoặc lời giải chi tiết của bạn vào đây, ví dụ: Slide chương 1 trang 15... Xem hướng dẫn chi tiết tại file README.md)`;
+    const explanation = `Đáp án tham khảo: ${answerStr}.\n(Điền ghi chú hoặc lời giải chi tiết của bạn vào đây, ví dụ: Slide chương 1 trang 15... Xem hướng dẫn chi tiết tại file README.md)`;
 
     let base64Image = '';
     if (fs.existsSync(filePath)) {
@@ -340,8 +365,11 @@ async function scrapeThreadAndBuildBank(thread, subject, headers, worker) {
       originalId: String(qNum),
       text: parsed.qText || `Question ${qNum}`,
       options: parsed.options,
-      answer: probableAnswer,
+      answer: answerStr,
+      correctAnswers: finalAnswers,
+      selectionMode: selectionMode,
       explanation: explanation,
+      sourceExam: folderName,
       image: base64Image
     });
 
@@ -469,6 +497,9 @@ async function main() {
   console.log(`\nSẽ tiến hành cào ${selectedThreads.length} bộ đề...`);
 
   const worker = await createWorker('eng');
+  await worker.setParameters({
+    user_defined_dpi: '300'
+  });
 
   for (let i = 0; i < selectedThreads.length; i++) {
     console.log(`\n------------------------------------------------------`);
