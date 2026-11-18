@@ -84,15 +84,26 @@ function parseOcrText(rawText) {
     .replace(/(\n|^)\s*8\s+(?=[A-Z0-9])/g, '$1B. ');
 
   const rawLines = normalized.split('\n').map(l => l.trim()).filter(Boolean);
+  
+  // Tách các phương án bị dính trên cùng 1 dòng (ví dụ: "B. Recovery testing C. GUI testing" hoặc "B. Test Suite C TestCycle")
+  const expandedLines = [];
+  for (const l of rawLines) {
+    const p1 = l.split(/(?<=\S)\s+(?=[A-F][\.\)\:\-]\s+)/i);
+    for (const sub of p1) {
+      const p2 = sub.split(/(?<=\S)\s+(?=[C-F]\s+[A-Za-z0-9]+)/);
+      expandedLines.push(...p2);
+    }
+  }
+
   const questionLines = [];
   const options = {};
   let currentKey = null;
 
-  const optRegexWithSep = /(?:^|[^a-zA-Z0-9])([A-F])[a-z]?(?:\.|\)|\:(?!\/)|(?:\s*-\s+))\s*(.*)$/i;
+  const optRegexWithSep = /(?:^|[^a-zA-Z0-9])([A-F])[a-z]?(?:\.|\)|\:(?!\/)|(?:\s*-\s+)|\s+)(.*)$/i;
   const optRegexTF = /(?:^|[^a-zA-Z0-9])([A-F])\s+(True|False)\b/i;
 
-  for (let i = 0; i < rawLines.length; i++) {
-    let line = rawLines[i];
+  for (let i = 0; i < expandedLines.length; i++) {
+    let line = expandedLines[i];
     
     if (/^\s*fuoverflow(?:\.com)?[\s|:_\-]*$/i.test(line)) continue;
     line = line.replace(/^\s*fuoverflow(?:\.com)?[\s§|:_\-]*\s*/i, '').trim();
@@ -481,3 +492,4 @@ main().catch(err => {
   console.error('\n✕ Lỗi không mong muốn:', err);
   process.exit(1);
 });
+

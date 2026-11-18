@@ -10,6 +10,8 @@ output/
 SWT301/
 WDU203c/
 SSG104/
+SSG105/
+PSD/
 scripts_legacy/
 eng.traineddata
 *_threads.json
